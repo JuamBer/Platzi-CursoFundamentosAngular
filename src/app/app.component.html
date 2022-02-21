@@ -1,3 +1,12 @@
+<h1>*NGFOR objects</h1>
+<div>
+  <div *ngFor="let product of products; index as i">
+    <img width="250" [src]="product.image" alt="">
+    <h2>{{ product.price }}</h2>
+    <p>{{ product.name }}</p>
+  </div>
+</div>
+<hr>
 <h1>*NGFOR</h1>
 <ul>
   <li *ngFor="let name of names; index as i">
