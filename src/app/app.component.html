@@ -1,3 +1,12 @@
+<h1>NG MODEL</h1>
+<p>Nombre: {{ person.name }}</p>
+<input type="text" required #nameInput="ngModel" [(ngModel)]="person.name">
+<p>Valid: {{ nameInput.valid }}</p>
+<p>Age: {{ person.age }}</p>
+<input type="number" max="18" #ageInput="ngModel" [(ngModel)]="person.age">
+<p>Valid: {{ ageInput.valid }}</p>
+
+<hr>
 <h1>Hola Mundo</h1>
 <hr>
 <button [disabled]="btnDisabled">Enviar</button>
