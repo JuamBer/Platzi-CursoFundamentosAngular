@@ -14,6 +14,7 @@ export class AppComponent {
     name: 'Nicolas',
     age:18
   }
+  public names: String[] = ['Nico','July','Santi']
 
   public toggleButton(){
     this.btnDisabled = !this.btnDisabled;

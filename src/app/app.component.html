@@ -1,3 +1,15 @@
+<h1>*NGFOR</h1>
+<ul>
+  <li *ngFor="let name of names; index as i">
+    {{
+      i
+    }}
+    {{
+      name
+    }}
+  </li>
+</ul>
+<hr>
 <h1>*NGIF</h1>
 <input type="text" required [(ngModel)]="person.name">
 <p *ngIf="person.name === 'Nicolas'; else elseBlock">My Content</p>
