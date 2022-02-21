@@ -1,3 +1,11 @@
+<h1>*NGIF</h1>
+<input type="text" required [(ngModel)]="person.name">
+<p *ngIf="person.name === 'Nicolas'; else elseBlock">My Content</p>
+<p *ngIf="person.name === 'Julian'; else elseBlock">My Other Content</p>
+<ng-template #elseBlock>
+  <p>Else</p>
+</ng-template>
+<hr>
 <h1>NG MODEL</h1>
 <p>Nombre: {{ person.name }}</p>
 <input type="text" required #nameInput="ngModel" [(ngModel)]="person.name">
