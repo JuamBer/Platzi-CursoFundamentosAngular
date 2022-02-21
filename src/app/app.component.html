@@ -1,4 +1,8 @@
 <h1>Hola Mundo</h1>
+<button [disabled]="btnDisabled">Enviar</button>
+<input type="text" [value]="person.name">
+<progress max="100" [value]="person.age"></progress>
 <h2>{{ 'Hola Mundo' }}</h2>
 <p>3 + 3 = {{ 3 + 3 }}</p>
-<h3>Hola, soy {{ name }} y tengo {{ age }}</h3>
+<h3>Hola, soy {{ person.name }} y tengo {{ person.age }}</h3>
+<img [src]="img" alt="">
