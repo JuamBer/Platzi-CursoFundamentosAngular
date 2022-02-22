@@ -6,6 +6,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public widthImg = 10;
   public name: String = 'Nicolas';
   public age: Number = 18;
   public btnDisabled: Boolean = true;
