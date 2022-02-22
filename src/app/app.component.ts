@@ -7,6 +7,11 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  register = {
+    name:'',
+    email:'',
+    password:''
+  }
   public widthImg = 10;
   public name: String = 'Nicolas';
   public age: Number = 18;
@@ -61,6 +66,10 @@ export class AppComponent {
   }
   public increaseAge(){
     this.person.age += 1;
+  }
+
+  onRegister(){
+    console.log(this.register);
   }
 
   onScroll(event: Event){
