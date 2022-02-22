@@ -5,6 +5,19 @@
   background: rgb(212, 108, 108);
 }
 
+.line-error {
+  height: 0;
+  border-bottom: 3px solid;
+
+  &.valid {
+    border-color: green;
+  }
+
+  &.invalid {
+    border-color: red;
+  }
+}
+
 .message-error {
   background-color: red;
   color:white;

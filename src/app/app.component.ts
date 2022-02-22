@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { reduce } from 'rxjs';
 import { Product } from './product.model';
 @Component({
   selector: 'app-root',
@@ -9,6 +10,11 @@ export class AppComponent {
   public widthImg = 10;
   public name: String = 'Nicolas';
   public age: Number = 18;
+  public box = {
+    width: 100,
+    height: 100,
+    background: 'red'
+  }
   public btnDisabled: Boolean = true;
   public img: String = 'https://multimedia.comunitatvalenciana.com/A1761560812F4470B6A1D8BC96835C8D/img/73A120AB817648A7B990AB66E8FB824D/JUCAR-0011.jpg?responsive'
   public person = {
